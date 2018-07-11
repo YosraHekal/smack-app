@@ -1,0 +1,3 @@
+[submodule "SWRevealViewController"]
+	path = SWRevealViewController
+	url = git@github.com:YosraHekal/SWRevealViewController.git
