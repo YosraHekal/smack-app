@@ -15,6 +15,9 @@
 		9A6793C120F6CE9700D811F9 /* ChatVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A6793C020F6CE9700D811F9 /* ChatVC.swift */; };
 		9A6793C320F6CEAE00D811F9 /* ChannelVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A6793C220F6CEAE00D811F9 /* ChannelVC.swift */; };
 		9A6793C520F7985800D811F9 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A6793C420F7985700D811F9 /* GradientView.swift */; };
+		9A6793C820F7FFED00D811F9 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A6793C720F7FFED00D811F9 /* Constants.swift */; };
+		9A6793CA20F810F500D811F9 /* RoundedCorners.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A6793C920F810F500D811F9 /* RoundedCorners.swift */; };
+		9A6793CC20F815A900D811F9 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A6793CB20F815A900D811F9 /* LoginVC.swift */; };
 		AC4674EFDE96799C47D79DB5 /* Pods_Smack.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F49F6A7C4245E7E5B3CC3BE /* Pods_Smack.framework */; };
 /* End PBXBuildFile section */
 
@@ -32,6 +35,9 @@
 		9A6793C020F6CE9700D811F9 /* ChatVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatVC.swift; sourceTree = "<group>"; };
 		9A6793C220F6CEAE00D811F9 /* ChannelVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelVC.swift; sourceTree = "<group>"; };
 		9A6793C420F7985700D811F9 /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
+		9A6793C720F7FFED00D811F9 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		9A6793C920F810F500D811F9 /* RoundedCorners.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedCorners.swift; sourceTree = "<group>"; };
+		9A6793CB20F815A900D811F9 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		9BCF08192912ED8402D62D40 /* Pods-Smack.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Smack.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Smack/Pods-Smack.debug.xcconfig"; sourceTree = "<group>"; };
 		DE7329ADA11AC7F443A16C27 /* Pods-Smack.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Smack.release.xcconfig"; path = "Pods/Target Support Files/Pods-Smack/Pods-Smack.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -70,6 +76,7 @@
 		9A24A96D20F6936C0037475C /* Smack */ = {
 			isa = PBXGroup;
 			children = (
+				9A6793C620F7FFCC00D811F9 /* Utilities */,
 				9A6793BF20F6CE7300D811F9 /* Model */,
 				9A6793BE20F6CE6D00D811F9 /* View */,
 				9A6793BD20F6CE6400D811F9 /* Controller */,
@@ -97,6 +104,7 @@
 			children = (
 				9A6793C020F6CE9700D811F9 /* ChatVC.swift */,
 				9A6793C220F6CEAE00D811F9 /* ChannelVC.swift */,
+				9A6793CB20F815A900D811F9 /* LoginVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -105,6 +113,7 @@
 			isa = PBXGroup;
 			children = (
 				9A6793C420F7985700D811F9 /* GradientView.swift */,
+				9A6793C920F810F500D811F9 /* RoundedCorners.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -114,6 +123,14 @@
 			children = (
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		9A6793C620F7FFCC00D811F9 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				9A6793C720F7FFED00D811F9 /* Constants.swift */,
+			);
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 		DF074D464E80D42EBC9590CD /* Pods */ = {
@@ -254,9 +271,12 @@
 			files = (
 				9A6793C320F6CEAE00D811F9 /* ChannelVC.swift in Sources */,
 				9A6793C120F6CE9700D811F9 /* ChatVC.swift in Sources */,
+				9A6793CC20F815A900D811F9 /* LoginVC.swift in Sources */,
 				9A6793C520F7985800D811F9 /* GradientView.swift in Sources */,
 				9A24A96F20F6936C0037475C /* AppDelegate.swift in Sources */,
 				9A6793BC20F6C8BE00D811F9 /* SWRevealViewController.m in Sources */,
+				9A6793C820F7FFED00D811F9 /* Constants.swift in Sources */,
+				9A6793CA20F810F500D811F9 /* RoundedCorners.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
