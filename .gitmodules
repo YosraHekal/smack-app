@@ -4,4 +4,4 @@
 
 [submodule "mac-chat-api"]
 	path = mac-chat-api
-	url = https://github.com/YosraHekal/mac-chat-api
+	url = git@github.com:YosraHekal/mac-chat-api.git
