@@ -1,3 +1,7 @@
 [submodule "SWRevealViewController"]
 	path = SWRevealViewController
 	url = https://github.com/John-Lluch/SWRevealViewController.git
+
+[submodule "mac-chat-api"]
+	path = mac-chat-api
+	url = https://github.com/devslopes-learn/mac-chat-api.git
