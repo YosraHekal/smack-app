@@ -402,6 +402,9 @@
                                 <state key="normal" title="Create Account">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="createAccountPressed:" destination="PQD-oT-1kK" eventType="touchUpInside" id="XB8-HM-ejP"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="bottom" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9O2-dG-BbQ">
                                 <rect key="frame" x="157" y="384" width="100" height="130"/>
@@ -414,6 +417,7 @@
                                 </state>
                                 <connections>
                                     <action selector="createAccountBtnPressed:" destination="NlJ-p1-xgy" eventType="touchUpInside" id="N4S-7N-8yf"/>
+                                    <action selector="pickAvatarPressed:" destination="PQD-oT-1kK" eventType="touchUpInside" id="ct6-BG-dbD"/>
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profileDefault" translatesAutoresizingMaskIntoConstraints="NO" id="7fy-3p-vHv">
@@ -423,14 +427,14 @@
                                     <constraint firstAttribute="height" constant="100" id="bQv-jQ-Ssc"/>
                                 </constraints>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="bottom" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aVO-Nj-Lnq">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="bottom" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aVO-Nj-Lnq" userLabel="PickBGcolour Pressed">
                                 <rect key="frame" x="115.66666666666669" y="514" width="183" height="32"/>
                                 <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="14"/>
                                 <state key="normal" title="Generate background colour">
                                     <color key="titleColor" red="0.3921568627" green="0.69411764710000001" blue="0.80784313730000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="createAccountBtnPressed:" destination="NlJ-p1-xgy" eventType="touchUpInside" id="EtH-xI-UoP"/>
+                                    <action selector="pickBGColourPressed:" destination="PQD-oT-1kK" eventType="touchUpInside" id="dje-Tp-Cly"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -458,6 +462,10 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="emailTXT" destination="X3h-X9-SFA" id="nJq-UK-FD2"/>
+                        <outlet property="passwordTxt" destination="UvZ-oA-MNh" id="Ptg-tq-2Z1"/>
+                        <outlet property="userImg" destination="7fy-3p-vHv" id="NZW-oj-96m"/>
+                        <outlet property="usernameTxt" destination="4am-iM-2o5" id="7Iq-Vg-MRq"/>
                         <segue destination="Kfu-dv-Ezv" kind="unwind" identifier="unwindToChannel" unwindAction="prepareForUnwindWithSegue:" id="5xy-nY-b1n"/>
                     </connections>
                 </viewController>

@@ -8,6 +8,7 @@
 
 import UIKit
 
+@IBDesignable
 class RoundedCorners: UIButton {
 
     override func awakeFromNib() {
@@ -16,4 +17,8 @@ class RoundedCorners: UIButton {
         layer.masksToBounds = true
     }
 
+    override func prepareForInterfaceBuilder() {
+        super.prepareForInterfaceBuilder()
+        self.awakeFromNib()
+    }
 }
