@@ -7,6 +7,15 @@
 //
 
 import UIKit
+
+
+enum AvatarType{
+    case dark
+    case light
+    
+}
+
+
 @IBDesignable
 
 class AvatarCell: UICollectionViewCell {
@@ -21,6 +30,16 @@ class AvatarCell: UICollectionViewCell {
         customizeview()
     }
     
+    
+    func configureCell(index: Int, type: AvatarType){
+        if type == AvatarType.dark {
+            avatarImg.image = UIImage(named: "dark\(index)")
+            self.layer.backgroundColor = UIColor.lightGray.cgColor
+        } else {
+            avatarImg.image = UIImage(named: "light\(index)")
+            self.layer.backgroundColor = UIColor.darkGray.cgColor
+        }
+    }
     
     func customizeview() {
         layer.backgroundColor = UIColor.lightGray.cgColor
