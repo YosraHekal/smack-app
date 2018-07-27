@@ -81,7 +81,6 @@ class AuthService {
             "password": password
         ]
         
-        // Alamofire.request(URL_LOGIN, method: .post, parameters: body, encoding: JSONEncoding.default, headers: HEADER).responseJSON { (response) in
         Alamofire.request(URL_LOGIN, method: .post, parameters: body, encoding: JSONEncoding.default, headers: HEADER).responseJSON { (response) in
         
             if response.result.error == nil {
