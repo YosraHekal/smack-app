@@ -24,6 +24,7 @@
 		9A76464221088C01004DD711 /* AvatarPickerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A76464121088C01004DD711 /* AvatarPickerVC.swift */; };
 		9A76464421088E94004DD711 /* AvatarCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A76464321088E94004DD711 /* AvatarCell.swift */; };
 		9A84553420FC54F100BE1A2C /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A84553320FC54F100BE1A2C /* AuthService.swift */; };
+		9AEF814A210B64D800ED3115 /* RoundedCornerImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AEF8149210B64D800ED3115 /* RoundedCornerImage.swift */; };
 		AC4674EFDE96799C47D79DB5 /* Pods_Smack.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F49F6A7C4245E7E5B3CC3BE /* Pods_Smack.framework */; };
 /* End PBXBuildFile section */
 
@@ -50,6 +51,7 @@
 		9A76464121088C01004DD711 /* AvatarPickerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarPickerVC.swift; sourceTree = "<group>"; };
 		9A76464321088E94004DD711 /* AvatarCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarCell.swift; sourceTree = "<group>"; };
 		9A84553320FC54F100BE1A2C /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
+		9AEF8149210B64D800ED3115 /* RoundedCornerImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedCornerImage.swift; sourceTree = "<group>"; };
 		9BCF08192912ED8402D62D40 /* Pods-Smack.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Smack.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Smack/Pods-Smack.debug.xcconfig"; sourceTree = "<group>"; };
 		DE7329ADA11AC7F443A16C27 /* Pods-Smack.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Smack.release.xcconfig"; path = "Pods/Target Support Files/Pods-Smack/Pods-Smack.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -131,6 +133,7 @@
 				9A6793C920F810F500D811F9 /* RoundedCorners.swift */,
 				9A6793D320F90C0100D811F9 /* Scroller.swift */,
 				9A76464321088E94004DD711 /* AvatarCell.swift */,
+				9AEF8149210B64D800ED3115 /* RoundedCornerImage.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -296,6 +299,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9A6793C320F6CEAE00D811F9 /* ChannelVC.swift in Sources */,
+				9AEF814A210B64D800ED3115 /* RoundedCornerImage.swift in Sources */,
 				9A6793C120F6CE9700D811F9 /* ChatVC.swift in Sources */,
 				9A76464421088E94004DD711 /* AvatarCell.swift in Sources */,
 				9A6793CC20F815A900D811F9 /* LoginVC.swift in Sources */,
