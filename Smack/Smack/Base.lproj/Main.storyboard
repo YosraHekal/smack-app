@@ -115,7 +115,7 @@
                                 <state key="normal" image="addChannelButton"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cuN-jT-UYd">
-                                <rect key="frame" x="117" y="659.66666666666663" width="45" height="36"/>
+                                <rect key="frame" x="107" y="659.66666666666663" width="45" height="36"/>
                                 <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="17"/>
                                 <state key="normal" title="Login">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -172,7 +172,7 @@
                             <constraint firstItem="cuN-jT-UYd" firstAttribute="centerY" secondItem="Wxm-KY-bBI" secondAttribute="centerY" id="gYD-nv-JU5"/>
                             <constraint firstItem="Wxm-KY-bBI" firstAttribute="leading" secondItem="O0I-fl-Qx1" secondAttribute="leadingMargin" id="hHk-Xf-uNF"/>
                             <constraint firstItem="bj8-ZM-PPm" firstAttribute="leading" secondItem="O0I-fl-Qx1" secondAttribute="leadingMargin" id="mwP-R3-dGK"/>
-                            <constraint firstItem="cuN-jT-UYd" firstAttribute="leading" secondItem="Wxm-KY-bBI" secondAttribute="trailing" constant="20" id="nBA-Ee-rV3"/>
+                            <constraint firstItem="cuN-jT-UYd" firstAttribute="leading" secondItem="Wxm-KY-bBI" secondAttribute="trailing" constant="10" id="nBA-Ee-rV3"/>
                             <constraint firstItem="UcU-wZ-tRT" firstAttribute="top" secondItem="X4f-64-GpC" secondAttribute="bottom" constant="24" id="qYI-dD-evs"/>
                             <constraint firstItem="UcU-wZ-tRT" firstAttribute="leading" secondItem="O0I-fl-Qx1" secondAttribute="leadingMargin" id="u6F-pa-b0r"/>
                             <constraint firstItem="Wxm-KY-bBI" firstAttribute="top" secondItem="sJd-J5-6zh" secondAttribute="bottom" constant="20" id="w3h-Um-0Ri"/>
@@ -180,6 +180,7 @@
                     </view>
                     <connections>
                         <outlet property="loginBtn" destination="cuN-jT-UYd" id="gEp-Xj-KUx"/>
+                        <outlet property="userImg" destination="Wxm-KY-bBI" id="fM4-JT-vts"/>
                         <segue destination="NlJ-p1-xgy" kind="show" identifier="toLogin" id="vRg-MV-Bdc"/>
                     </connections>
                 </viewController>
