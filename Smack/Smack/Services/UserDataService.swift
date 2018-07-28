@@ -67,6 +67,17 @@ class  UserDataService {
         
     }
 
+    
+    func logoutUser(){
+        id = ""
+        avatarColour = ""
+        avatarName = ""
+        name = ""
+        email = ""
+        AuthService.instance.isLoggedIn = false
+        AuthService.instance.userEmail = ""
+        AuthService.instance.authToken = ""
+    }
 
 
 

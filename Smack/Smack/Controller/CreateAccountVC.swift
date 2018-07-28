@@ -9,7 +9,7 @@
 import UIKit
 
 class CreateAccountVC: UIViewController {
-
+    
     //Outlets
     @IBOutlet weak var usernameTxt: UITextField!
     @IBOutlet weak var emailTXT: UITextField!
@@ -67,7 +67,7 @@ class CreateAccountVC: UIViewController {
         guard let name = usernameTxt.text, usernameTxt.text != "" else { return }
         guard let email = emailTXT.text , emailTXT.text != "" else { return }
         guard let pass = passwordTxt.text , passwordTxt.text != "" else { return }
-            
+        
         AuthService.instance.registerUser(email: email, password: pass) { (success) in
             if success {
                 AuthService.instance.loginUser(email: email, password: pass, completion: { (success) in
