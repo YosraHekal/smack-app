@@ -272,6 +272,9 @@
                                 <state key="normal" title="Login">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="loginPressed:" destination="NlJ-p1-xgy" eventType="touchUpInside" id="Ovu-a5-Dj2"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rna-dz-VSy">
                                 <rect key="frame" x="57" y="395" width="300" height="36"/>
@@ -287,14 +290,20 @@
                                     <action selector="createAccountBtnPressed:" destination="NlJ-p1-xgy" eventType="touchUpInside" id="RAM-1x-GVl"/>
                                 </connections>
                             </button>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="G6o-Pi-qM5">
+                                <rect key="frame" x="188.66666666666666" y="269.66666666666669" width="37" height="37"/>
+                                <color key="color" red="0.2901960784" green="0.41568627450000001" blue="0.73333333329999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="G6o-Pi-qM5" firstAttribute="centerY" secondItem="phO-xx-RgJ" secondAttribute="centerY" constant="-80" id="1jT-aa-PrU"/>
                             <constraint firstItem="wmm-dz-AWN" firstAttribute="top" secondItem="VtZ-kr-h85" secondAttribute="bottom" constant="60" id="Gnf-Yp-lgf"/>
                             <constraint firstItem="Pq8-8n-nTK" firstAttribute="leading" secondItem="phO-xx-RgJ" secondAttribute="leading" constant="30" id="IH3-ss-9sG"/>
                             <constraint firstItem="Pq8-8n-nTK" firstAttribute="top" secondItem="wmm-dz-AWN" secondAttribute="bottom" constant="55" id="J2p-ur-ihi"/>
                             <constraint firstAttribute="trailing" secondItem="Pq8-8n-nTK" secondAttribute="trailing" constant="30" id="NJm-fg-gvD"/>
                             <constraint firstItem="rna-dz-VSy" firstAttribute="centerX" secondItem="phO-xx-RgJ" secondAttribute="centerX" id="hnl-gM-Dmz"/>
+                            <constraint firstItem="G6o-Pi-qM5" firstAttribute="centerX" secondItem="phO-xx-RgJ" secondAttribute="centerX" id="i4z-QW-8bg"/>
                             <constraint firstItem="Pq8-8n-nTK" firstAttribute="centerX" secondItem="phO-xx-RgJ" secondAttribute="centerX" id="mGI-Uo-0zn"/>
                             <constraint firstItem="wmm-dz-AWN" firstAttribute="centerX" secondItem="phO-xx-RgJ" secondAttribute="centerX" id="ojk-rY-TDP"/>
                             <constraint firstItem="rna-dz-VSy" firstAttribute="top" secondItem="gqB-rB-2vO" secondAttribute="bottom" constant="20" id="p3E-lu-uLv"/>
@@ -307,6 +316,9 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="passwordTxt" destination="8ZH-Xg-EpS" id="eKC-gf-qFI"/>
+                        <outlet property="spinner" destination="G6o-Pi-qM5" id="Nx4-8p-gL2"/>
+                        <outlet property="userEmailTxt" destination="Bkb-K4-r07" id="mp4-Ok-Okf"/>
                         <segue destination="PQD-oT-1kK" kind="show" identifier="toCreateAccount" id="MNw-QQ-PQL"/>
                     </connections>
                 </viewController>

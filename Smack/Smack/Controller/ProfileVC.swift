@@ -37,14 +37,12 @@ class ProfileVC: UIViewController {
     
     
     func setupView(){
-        if AuthService.instance.isLoggedIn {
             userEmail.text = UserDataService.instabce.email
             userName.text = UserDataService.instabce.name
             profileImg.image = UIImage(named: UserDataService.instabce.avatarName)
             profileImg.backgroundColor = UserDataService.instabce.returnUiColou(components: UserDataService.instabce.avatarColour)
             let closeTap = UITapGestureRecognizer(target: self, action: #selector(ProfileVC.closeTap(_:)))
             bgView.addGestureRecognizer(closeTap)
-        }
     }
     @objc func closeTap(_ recogzier: UITapGestureRecognizer){
         dismiss(animated: true, completion: nil)

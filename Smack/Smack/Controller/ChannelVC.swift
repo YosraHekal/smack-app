@@ -31,7 +31,9 @@ class ChannelVC: UIViewController {
         
     }
     
-    
+    override func viewDidAppear(_ animated: Bool) {
+        setUpUserInfo()
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -42,6 +44,10 @@ class ChannelVC: UIViewController {
     
     
     @objc func userDataDidChange(_ notif: Notification){
+        setUpUserInfo()
+    }
+    
+    func setUpUserInfo(){
         if AuthService.instance.isLoggedIn {
             loginBtn.setTitle(UserDataService.instabce.name, for: .normal)
             userImg.image = UIImage(named: UserDataService.instabce.avatarName)
@@ -51,7 +57,6 @@ class ChannelVC: UIViewController {
             userImg.image = UIImage(named: "menuProfileIcon")
             userImg.backgroundColor = UIColor.clear
         }
-        
     }
     
     
