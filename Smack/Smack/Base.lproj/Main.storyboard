@@ -14,8 +14,8 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="SWRevealViewController" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="nOc-4O-3dN"/>
-                        <viewControllerLayoutGuide type="bottom" id="xoD-lx-8XY"/>
+                        <viewControllerLayoutGuide type="top" id="u86-mr-Utm"/>
+                        <viewControllerLayoutGuide type="bottom" id="Z1h-Os-DqI"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC" customClass="SWRevealView">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
@@ -36,8 +36,8 @@
             <objects>
                 <viewController id="dbF-de-d9V" customClass="ChatVC" customModule="Smack" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="A6Y-dC-92o"/>
-                        <viewControllerLayoutGuide type="bottom" id="qgf-H2-pWR"/>
+                        <viewControllerLayoutGuide type="top" id="KWF-Dk-EHa"/>
+                        <viewControllerLayoutGuide type="bottom" id="ikj-Sn-9Cc"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="gaO-S1-9LE">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
@@ -91,8 +91,8 @@
             <objects>
                 <viewController id="Xe7-1W-oLj" customClass="ChannelVC" customModule="Smack" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="X4f-64-GpC"/>
-                        <viewControllerLayoutGuide type="bottom" id="p30-dL-aMn"/>
+                        <viewControllerLayoutGuide type="top" id="VfX-Ez-Y59"/>
+                        <viewControllerLayoutGuide type="bottom" id="p1z-AQ-rLO"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="O0I-fl-Qx1" customClass="GradientView" customModule="Smack" customModuleProvider="target">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
@@ -113,6 +113,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eKH-9k-xfO">
                                 <rect key="frame" x="317" y="95.666666666666671" width="22" height="22"/>
                                 <state key="normal" image="addChannelButton"/>
+                                <connections>
+                                    <action selector="addChannelPressed:" destination="Xe7-1W-oLj" eventType="touchUpInside" id="nWh-pi-IOu"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cuN-jT-UYd">
                                 <rect key="frame" x="107" y="659.66666666666663" width="45" height="36"/>
@@ -171,12 +174,12 @@
                             <constraint firstItem="cuN-jT-UYd" firstAttribute="centerY" secondItem="Wxm-KY-bBI" secondAttribute="centerY" id="NRB-mK-5Du"/>
                             <constraint firstItem="sJd-J5-6zh" firstAttribute="top" secondItem="eKH-9k-xfO" secondAttribute="bottom" constant="20" id="OFt-9i-eIt"/>
                             <constraint firstItem="eKH-9k-xfO" firstAttribute="centerY" secondItem="bj8-ZM-PPm" secondAttribute="centerY" id="St2-6L-beT"/>
-                            <constraint firstItem="p30-dL-aMn" firstAttribute="top" secondItem="Wxm-KY-bBI" secondAttribute="bottom" constant="20" id="UOF-jt-e2e"/>
+                            <constraint firstItem="p1z-AQ-rLO" firstAttribute="top" secondItem="Wxm-KY-bBI" secondAttribute="bottom" constant="20" id="UOF-jt-e2e"/>
                             <constraint firstItem="cuN-jT-UYd" firstAttribute="centerY" secondItem="Wxm-KY-bBI" secondAttribute="centerY" id="gYD-nv-JU5"/>
                             <constraint firstItem="Wxm-KY-bBI" firstAttribute="leading" secondItem="O0I-fl-Qx1" secondAttribute="leadingMargin" id="hHk-Xf-uNF"/>
                             <constraint firstItem="bj8-ZM-PPm" firstAttribute="leading" secondItem="O0I-fl-Qx1" secondAttribute="leadingMargin" id="mwP-R3-dGK"/>
                             <constraint firstItem="cuN-jT-UYd" firstAttribute="leading" secondItem="Wxm-KY-bBI" secondAttribute="trailing" constant="10" id="nBA-Ee-rV3"/>
-                            <constraint firstItem="UcU-wZ-tRT" firstAttribute="top" secondItem="X4f-64-GpC" secondAttribute="bottom" constant="24" id="qYI-dD-evs"/>
+                            <constraint firstItem="UcU-wZ-tRT" firstAttribute="top" secondItem="VfX-Ez-Y59" secondAttribute="bottom" constant="24" id="qYI-dD-evs"/>
                             <constraint firstItem="UcU-wZ-tRT" firstAttribute="leading" secondItem="O0I-fl-Qx1" secondAttribute="leadingMargin" id="u6F-pa-b0r"/>
                             <constraint firstItem="Wxm-KY-bBI" firstAttribute="top" secondItem="sJd-J5-6zh" secondAttribute="bottom" constant="20" id="w3h-Um-0Ri"/>
                         </constraints>
@@ -197,8 +200,8 @@
             <objects>
                 <viewController id="NlJ-p1-xgy" customClass="LoginVC" customModule="Smack" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="VtZ-kr-h85"/>
-                        <viewControllerLayoutGuide type="bottom" id="Y7W-j1-ugZ"/>
+                        <viewControllerLayoutGuide type="top" id="Gi0-v0-qrn"/>
+                        <viewControllerLayoutGuide type="bottom" id="vGM-kA-fJH"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="phO-xx-RgJ">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
@@ -302,7 +305,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="G6o-Pi-qM5" firstAttribute="centerY" secondItem="phO-xx-RgJ" secondAttribute="centerY" constant="-80" id="1jT-aa-PrU"/>
-                            <constraint firstItem="wmm-dz-AWN" firstAttribute="top" secondItem="VtZ-kr-h85" secondAttribute="bottom" constant="60" id="Gnf-Yp-lgf"/>
+                            <constraint firstItem="wmm-dz-AWN" firstAttribute="top" secondItem="Gi0-v0-qrn" secondAttribute="bottom" constant="60" id="Gnf-Yp-lgf"/>
                             <constraint firstItem="Pq8-8n-nTK" firstAttribute="leading" secondItem="phO-xx-RgJ" secondAttribute="leading" constant="30" id="IH3-ss-9sG"/>
                             <constraint firstItem="Pq8-8n-nTK" firstAttribute="top" secondItem="wmm-dz-AWN" secondAttribute="bottom" constant="55" id="J2p-ur-ihi"/>
                             <constraint firstAttribute="trailing" secondItem="Pq8-8n-nTK" secondAttribute="trailing" constant="30" id="NJm-fg-gvD"/>
@@ -314,7 +317,7 @@
                             <constraint firstItem="gqB-rB-2vO" firstAttribute="top" secondItem="Pq8-8n-nTK" secondAttribute="bottom" constant="40" id="rbe-Bl-eoP"/>
                             <constraint firstItem="GYg-fj-QcA" firstAttribute="trailing" secondItem="phO-xx-RgJ" secondAttribute="trailingMargin" id="tSm-zL-Smh"/>
                             <constraint firstItem="gqB-rB-2vO" firstAttribute="leading" secondItem="phO-xx-RgJ" secondAttribute="leadingMargin" constant="10" id="xx6-cF-3lw"/>
-                            <constraint firstItem="GYg-fj-QcA" firstAttribute="top" secondItem="VtZ-kr-h85" secondAttribute="bottom" constant="8" id="yPu-kT-0Ix"/>
+                            <constraint firstItem="GYg-fj-QcA" firstAttribute="top" secondItem="Gi0-v0-qrn" secondAttribute="bottom" constant="8" id="yPu-kT-0Ix"/>
                             <constraint firstItem="gqB-rB-2vO" firstAttribute="centerX" secondItem="phO-xx-RgJ" secondAttribute="centerX" id="yWN-hY-yCH"/>
                             <constraint firstAttribute="trailingMargin" secondItem="gqB-rB-2vO" secondAttribute="trailing" constant="10" id="z3s-oh-sHj"/>
                         </constraints>
@@ -335,8 +338,8 @@
             <objects>
                 <viewController id="PQD-oT-1kK" customClass="CreateAccountVC" customModule="Smack" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="UyA-C1-3kR"/>
-                        <viewControllerLayoutGuide type="bottom" id="kZ6-pT-ad8"/>
+                        <viewControllerLayoutGuide type="top" id="ukN-5p-INu"/>
+                        <viewControllerLayoutGuide type="bottom" id="b37-zC-wi7"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="ovw-ha-VeW">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
@@ -468,7 +471,7 @@
                             <constraint firstItem="zgn-Gy-kJm" firstAttribute="centerX" secondItem="ovw-ha-VeW" secondAttribute="centerX" id="MTg-zr-xMI"/>
                             <constraint firstItem="ygZ-XH-1Z5" firstAttribute="top" secondItem="fVy-3o-PO2" secondAttribute="bottom" constant="20" id="Njh-Q9-jS3"/>
                             <constraint firstItem="ygZ-XH-1Z5" firstAttribute="centerX" secondItem="ovw-ha-VeW" secondAttribute="centerX" id="P78-Vl-LKK"/>
-                            <constraint firstItem="zgn-Gy-kJm" firstAttribute="top" secondItem="UyA-C1-3kR" secondAttribute="bottom" constant="30" id="RyK-oO-reS"/>
+                            <constraint firstItem="zgn-Gy-kJm" firstAttribute="top" secondItem="ukN-5p-INu" secondAttribute="bottom" constant="30" id="RyK-oO-reS"/>
                             <constraint firstItem="7fy-3p-vHv" firstAttribute="centerX" secondItem="ovw-ha-VeW" secondAttribute="centerX" id="adW-J2-T90"/>
                             <constraint firstItem="fVy-3o-PO2" firstAttribute="leading" secondItem="ovw-ha-VeW" secondAttribute="leadingMargin" constant="20" id="cfF-bC-dwg"/>
                             <constraint firstItem="aVO-Nj-Lnq" firstAttribute="centerX" secondItem="ovw-ha-VeW" secondAttribute="centerX" id="cwk-OR-KZN"/>
@@ -480,7 +483,7 @@
                             <constraint firstItem="ygZ-XH-1Z5" firstAttribute="leading" secondItem="ovw-ha-VeW" secondAttribute="leadingMargin" constant="20" id="gBc-Bl-9NL"/>
                             <constraint firstItem="qJo-ac-8Fz" firstAttribute="trailing" secondItem="ovw-ha-VeW" secondAttribute="trailingMargin" id="ghq-cX-KqV"/>
                             <constraint firstItem="aVO-Nj-Lnq" firstAttribute="top" secondItem="9O2-dG-BbQ" secondAttribute="bottom" id="kz7-GD-pAF"/>
-                            <constraint firstItem="qJo-ac-8Fz" firstAttribute="top" secondItem="UyA-C1-3kR" secondAttribute="bottom" constant="8" id="wOj-Pj-8AP"/>
+                            <constraint firstItem="qJo-ac-8Fz" firstAttribute="top" secondItem="ukN-5p-INu" secondAttribute="bottom" constant="8" id="wOj-Pj-8AP"/>
                             <constraint firstItem="9O2-dG-BbQ" firstAttribute="width" secondItem="7fy-3p-vHv" secondAttribute="width" id="zs2-Iz-h5F"/>
                         </constraints>
                     </view>
@@ -504,8 +507,8 @@
             <objects>
                 <viewController id="5dv-uK-vs7" customClass="AvatarPickerVC" customModule="Smack" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="yyM-s3-slN"/>
-                        <viewControllerLayoutGuide type="bottom" id="jjp-Qb-R8Y"/>
+                        <viewControllerLayoutGuide type="top" id="xQ0-1H-HOb"/>
+                        <viewControllerLayoutGuide type="bottom" id="8yu-5s-jih"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Zbc-30-2s5">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
@@ -577,10 +580,10 @@
                             <constraint firstItem="JjX-jV-bkd" firstAttribute="centerX" secondItem="Zbc-30-2s5" secondAttribute="centerX" id="8vD-9Z-rxx"/>
                             <constraint firstItem="mzc-X0-88b" firstAttribute="leading" secondItem="Zbc-30-2s5" secondAttribute="leadingMargin" id="Oie-C9-rwN"/>
                             <constraint firstItem="byq-Qv-XZ7" firstAttribute="trailing" secondItem="Zbc-30-2s5" secondAttribute="trailingMargin" id="SAN-gJ-csh"/>
-                            <constraint firstItem="JjX-jV-bkd" firstAttribute="top" secondItem="yyM-s3-slN" secondAttribute="bottom" constant="8" id="dQY-Cb-XuK"/>
-                            <constraint firstItem="mzc-X0-88b" firstAttribute="top" secondItem="yyM-s3-slN" secondAttribute="bottom" constant="8" id="l54-dw-mwd"/>
+                            <constraint firstItem="JjX-jV-bkd" firstAttribute="top" secondItem="xQ0-1H-HOb" secondAttribute="bottom" constant="8" id="dQY-Cb-XuK"/>
+                            <constraint firstItem="mzc-X0-88b" firstAttribute="top" secondItem="xQ0-1H-HOb" secondAttribute="bottom" constant="8" id="l54-dw-mwd"/>
                             <constraint firstItem="byq-Qv-XZ7" firstAttribute="top" secondItem="mzc-X0-88b" secondAttribute="bottom" constant="20" id="nGe-0A-bZ0"/>
-                            <constraint firstItem="jjp-Qb-R8Y" firstAttribute="top" secondItem="byq-Qv-XZ7" secondAttribute="bottom" id="wA3-Cb-g3f"/>
+                            <constraint firstItem="8yu-5s-jih" firstAttribute="top" secondItem="byq-Qv-XZ7" secondAttribute="bottom" id="wA3-Cb-g3f"/>
                         </constraints>
                     </view>
                     <connections>

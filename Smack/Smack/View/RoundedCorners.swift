@@ -9,8 +9,9 @@
 import UIKit
 
 @IBDesignable
-class RoundedCorners: UIButton {
 
+class RoundedCorners: UIButton {
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         layer.cornerRadius = 5
