@@ -16,8 +16,13 @@ class ChatVC: UIViewController, UITableViewDelegate,UITableViewDataSource {
     @IBOutlet weak var menuBtn: UIButton!
     @IBOutlet weak var channelNameLabel: UILabel!
     @IBOutlet weak var messageTxtBox: UITextField!
+    @IBOutlet weak var sendBtn: UIButton!
     
     @IBOutlet weak var tableView: UITableView!
+    
+    //Variables
+    var isTyping = false
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         view.bindToKeyboard()
@@ -25,6 +30,7 @@ class ChatVC: UIViewController, UITableViewDelegate,UITableViewDataSource {
         tableView.dataSource = self
         tableView.estimatedRowHeight = 80
         tableView.rowHeight = UITableViewAutomaticDimension
+        sendBtn.isHidden = true
         
         let tap = UITapGestureRecognizer(target: self, action: #selector(ChatVC.handltap))
         view.addGestureRecognizer(tap)
@@ -40,6 +46,10 @@ class ChatVC: UIViewController, UITableViewDelegate,UITableViewDataSource {
         SocketService.instance.getChatMessages { (success) in
             if success {
                 self.tableView.reloadData()
+                let endIndex = IndexPath(row: MessageService.instance.messages.count - 1 , section: 0)
+                if MessageService.instance.messages.count > 0 {
+                    self.tableView.scrollToRow(at: endIndex, at: .bottom, animated: true)
+                }
             }
         }
         
@@ -63,6 +73,7 @@ class ChatVC: UIViewController, UITableViewDelegate,UITableViewDataSource {
             onLoginGetMessages()
         } else {
             channelNameLabel.text = "Please Log in!"
+            tableView.reloadData()
         }
     }
     
@@ -99,6 +110,18 @@ class ChatVC: UIViewController, UITableViewDelegate,UITableViewDataSource {
     }
 
 
+    @IBAction func messageBoxEditing(_ sender: Any) {
+        if messageTxtBox.text == "" {
+        isTyping = false
+        sendBtn.isHidden = true
+    } else {
+        if isTyping == false {
+            sendBtn.isHidden = false
+        }
+        isTyping = true
+        }
+    }
+    
     @IBAction func sendMsgPressed(_ sender: Any) {
         if AuthService.instance.isLoggedIn {
             guard let channelId = MessageService.instance.selectedChannel?.id else {return}
@@ -106,9 +129,8 @@ class ChatVC: UIViewController, UITableViewDelegate,UITableViewDataSource {
             
             SocketService.instance.addMessage(messageBody: message, userId: UserDataService.instabce.id, channelId: channelId) { (success) in
                 if success {
-                    print(23456543234543)
                     self.messageTxtBox.text = ""
-                    self.messageTxtBox.resignFirstResponder()
+                    //self.messageTxtBox.resignFirstResponder() //closes keyboard after sending the message
                 }
             }
         }
