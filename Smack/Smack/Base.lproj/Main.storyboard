@@ -154,13 +154,21 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="etO-ZX-Kwh">
+                                <rect key="frame" x="8" y="675" width="0.0" height="0.0"/>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="15"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="etO-ZX-Kwh" firstAttribute="leading" secondItem="gaO-S1-9LE" secondAttribute="leading" constant="8" id="0Xs-ki-ZgS"/>
                             <constraint firstItem="eAG-RQ-xNO" firstAttribute="leading" secondItem="gaO-S1-9LE" secondAttribute="leading" id="1FU-bH-1xs"/>
                             <constraint firstItem="ikj-Sn-9Cc" firstAttribute="top" secondItem="ivh-Gi-KhX" secondAttribute="bottom" constant="8" symbolic="YES" id="6H4-V5-8ax"/>
                             <constraint firstAttribute="trailing" secondItem="cfK-rJ-lae" secondAttribute="trailing" id="79E-7t-oCe"/>
                             <constraint firstItem="Q3m-S8-mWZ" firstAttribute="trailing" secondItem="gaO-S1-9LE" secondAttribute="trailing" id="EQo-Sp-UEY"/>
+                            <constraint firstItem="eAG-RQ-xNO" firstAttribute="top" secondItem="etO-ZX-Kwh" secondAttribute="bottom" constant="5" id="FjT-w4-7aT"/>
                             <constraint firstItem="ikj-Sn-9Cc" firstAttribute="top" secondItem="eAG-RQ-xNO" secondAttribute="bottom" id="cPk-Fb-M2D"/>
                             <constraint firstItem="cfK-rJ-lae" firstAttribute="leading" secondItem="gaO-S1-9LE" secondAttribute="leading" id="cvK-BW-oDy"/>
                             <constraint firstItem="Q3m-S8-mWZ" firstAttribute="top" secondItem="gaO-S1-9LE" secondAttribute="top" id="feq-xR-7xj"/>
@@ -178,6 +186,7 @@
                         <outlet property="messageTxtBox" destination="eAG-RQ-xNO" id="gkg-F3-Aiq"/>
                         <outlet property="sendBtn" destination="ivh-Gi-KhX" id="bxV-03-M9n"/>
                         <outlet property="tableView" destination="cfK-rJ-lae" id="61y-PG-wvb"/>
+                        <outlet property="typingUsersLbl" destination="etO-ZX-Kwh" id="sJf-SB-qRm"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="umF-Ug-akY" userLabel="First Responder" sceneMemberID="firstResponder"/>
