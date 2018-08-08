@@ -51,6 +51,13 @@ class ChannelVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
                 self.tableView.reloadData()
             }
         }
+        
+        SocketService.instance.getChatMessages { (newMessage) in
+            if newMessage.channelID != MessageService.instance.selectedChannel?.id && AuthService.instance.isLoggedIn {
+                MessageService.instance.unreadChannels.append(newMessage.channelID)
+                self.tableView.reloadData()
+            }
+        }
     }
     
     
@@ -106,8 +113,15 @@ class ChannelVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let channel = MessageService.instance.channels[indexPath.row]
         MessageService.instance.selectedChannel = channel
-        NotificationCenter.default.post(name: NOTIF_CHANNELS_SELECTED, object: nil)
         
+        if MessageService.instance.unreadChannels.count > 0 {
+            MessageService.instance.unreadChannels = MessageService.instance.unreadChannels.filter{$0 != channel.id}
+        }
+        let inex = IndexPath(row: indexPath.row, section: 0)
+        tableView.reloadRows(at: [inex], with: .none)
+        tableView.selectRow(at: inex, animated: false, scrollPosition: .none)
+        
+        NotificationCenter.default.post(name: NOTIF_CHANNELS_SELECTED, object: nil)
         self.revealViewController().revealToggle(animated: true) //used to slide the menu back and forth
         
     }
